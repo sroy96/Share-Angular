@@ -1,0 +1,27 @@
+<div class="col-md-6">
+  <table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Amount</th>
+    <th>GivenBy</th>
+    <th>TakenBY</th>
+    <th>TrID</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let transaction of transactions">
+          <td>{{transaction.id}}</td>
+          <td>{{transaction.Amount}}</td>
+        <td>{{transaction.GivenBy}}</td>
+        <td>{{transaction.TakenBY}}</td>
+        <td>{{transaction.TrId}}</td>
+          <td><button class="btn btn-danger" (click)="deleteTransaction(transaction)"> Delete </button></td>
+
+          </tr>
+  </tbody>
+    </table>
+
+    <button class="btn btn-danger" (click)="deleteallTransaction()"> Delete_All </button>
+
+  </div>

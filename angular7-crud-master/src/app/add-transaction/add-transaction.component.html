@@ -1,0 +1,32 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Transaction</h2>
+  <form>
+     <div class="form-group">
+      <label for="id">id:</label>
+      <input type="id" [(ngModel)]="tran.id" placeholder="id" name="id" class="form-control" id="id">
+    </div>
+    <div class="form-group">
+      <label for="Amount">Amount:</label>
+      <input [(ngModel)]="tran.Amount" placeholder="Amount" name="Amount" class="form-control" id="Amount">
+    </div>
+
+
+    <div class="form-group">
+      <label for="GivenBY">GivenBY:</label>
+      <input [(ngModel)]="tran.GivenBy" placeholder="GivenBY" name="GivenBY" class="form-control" id="GivenBY">
+    </div>
+
+    <div class="form-group">
+      <label for="TakenBY">TakenBY</label>
+      <input [(ngModel)]="tran.TakenBY" placeholder="TakenBY" name="TakenBY" class="form-control" id="TakenBY">
+    </div>
+
+    <div class="form-group">
+      <label for="TrID">TrID:</label>
+      <input type="TrID" [(ngModel)]="tran.TrId" placeholder="TrID" name="TrID" class="form-control" id="TrID">
+    </div>
+
+    <button class="btn btn-success" (click)="createTransaction()">Create</button>
+<!--    <button class="btn btn-success" (click)="createallTransaction()">ALL_Create</button>-->
+  </form>
+  </div>

@@ -1,0 +1,26 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Member</h2>
+  <form>
+    <div class="form-group">
+      <label for="AccID">AccID:</label>
+      <input type="AccID" [(ngModel)]="user.accId" placeholder="AccID" name="AccID" class="form-control" id="AccID">
+    </div>
+  
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input [(ngModel)]="user.name" placeholder="name" name="name" class="form-control" id="name">
+    </div>
+  
+    <div class="form-group">
+      <label for="balance">Balance</label>
+      <input [(ngModel)]="user.balance" placeholder="balance" name="balance" class="form-control" id="balance">
+    </div>
+
+    <div class="form-group">
+      <label for="mail">Email:</label>
+      <input [(ngModel)]="user.mail" placeholder="mail" name="mail" class="form-control" id="mail">
+    </div>
+  
+    <button class="btn btn-success" (click)="createEmployee()">Create</button>
+  </form>
+  </div>
